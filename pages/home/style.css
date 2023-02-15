@@ -1,0 +1,133 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    background-image: url('../../images/side-image.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 100vh;
+    padding: 40px;
+    color: var(--text-base);   
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.form {
+    max-width: 572px;
+    min-width: 335px;
+    height: 512px;
+    background-color: var(--form-background);
+    margin: 194px 34px 100px 34px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    width: 335px;
+    text-align: start;
+    gap: .5rem;
+}
+
+p {
+    margin-bottom: 27px;
+}
+
+.logo img {
+    width: 115px;   
+}
+
+img {
+    width: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+}
+
+#email {
+    background-image: url('../../images/mail.svg');
+    background-repeat: no-repeat;
+    background-position: center left 10px;
+}
+
+#email:focus {
+    background-image: url('../../images/mail-focus.svg');
+}
+
+#password {
+    background-image: url('../../images/lock.svg');
+    background-repeat: no-repeat;
+    background-position: center left 10px;
+}
+
+#password:focus {
+    background-image: url('../../images/lock-focus.svg');
+}
+
+input {
+    border: 1px solid var(--text-base);
+    background-color: transparent;
+    height: 44px;
+    outline: none;
+    background: none;
+    border-radius: 4px;
+    padding-left: 37px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-base);
+}
+
+
+input:focus {
+    outline: 1px solid var(--primary-color);    
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    height: 1.6rem;
+}
+
+input[type="button"] {
+    background-color: var(--primary-color);
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    color: var(--background);
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-image: none;
+        padding: 40px 20px;
+    } 
+
+    .form {
+        background-color: var(--background);
+        margin: 30px 0;    
+    }
+}

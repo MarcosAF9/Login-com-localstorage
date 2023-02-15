@@ -1,0 +1,95 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    background-image: url('../../images/side-image.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 100vh;
+    padding: 40px;
+    color: var(--text-base);   
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.form {
+    max-width: 572px;
+    min-width: 335px;
+    height: 512px;
+    background-color: var(--form-background);
+    margin: 194px 34px 100px 34px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+p {
+    margin-bottom: 27px;
+}
+
+.logo img {
+    width: 115px;   
+}
+
+img {
+    width: 24px;
+}
+
+#span-name {
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+
+input[type="button"] {
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    color: var(--background);
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-image: none;
+        padding: 40px 20px;
+    } 
+
+    .form {
+        background-color: var(--background);
+        margin: 30px 0;    
+    }
+
+    input[type="button"] {
+        background-color: var(--primary-color);
+        height: 50px;
+        max-width: 100%;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        color: var(--background);
+        cursor: pointer;
+        text-align: center;
+    }
+}

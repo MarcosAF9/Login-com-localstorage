@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form CSS</title>
+</head>
+<body>    
+    <a href="http://127.0.0.1:5500/pages/home/index.html" class="logo">
+        <img src="../../images/logo.svg" alt="logo">
+    </a>
+    <div class="form">            
+        <div class="title">
+            <img src="../../images/log-in.svg" alt="">
+            <h1>Crie sua conta</h1>
+        </div>
+        <p>Crie uma conta com seu email e senha.</p>
+        <form id="form">
+            <label for="name">Nome</label>
+            <input type="name" name="name" id="name" placeholder="Digite seu nome" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+            <input type="button" value="Criar conta" id="createBtn">
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
