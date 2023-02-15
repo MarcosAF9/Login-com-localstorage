@@ -15,7 +15,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background);
-    background-image: url('../../images/side-image.jpg');
+    background-image: url('/images/side-image.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
@@ -66,23 +66,23 @@ form {
 }
 
 #email {
-    background-image: url('../../images/mail.svg');
+    background-image: url('/images/mail.svg');
     background-repeat: no-repeat;
     background-position: center left 10px;
 }
 
 #email:focus {
-    background-image: url('../../images/mail-focus.svg');
+    background-image: url('/images/mail-focus.svg');
 }
 
 #password {
-    background-image: url('../../images/lock.svg');
+    background-image: url('/images/lock.svg');
     background-repeat: no-repeat;
     background-position: center left 10px;
 }
 
 #password:focus {
-    background-image: url('../../images/lock-focus.svg');
+    background-image: url('/images/lock-focus.svg');
 }
 
 input {

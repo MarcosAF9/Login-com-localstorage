@@ -28,7 +28,7 @@ function createAcc() {
         dbClient.push(dados);
         setLocalStorage(dbClient);
         alert('Usuário registrado com sucesso!')
-        window.location.href = "http://127.0.0.1:5500/pages/home/index.html";
+        window.location.href = "http://127.0.0.1:5500/index.html";
     }
 }
 
